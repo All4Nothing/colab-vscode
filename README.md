@@ -18,7 +18,7 @@ Host *.trycloudflare.com
     ProxyCommand C:\Users\sd081\Downloads\cloudflared-stable-windows-amd64\cloudflared-windows-386.exe access ssh --hostname %h
  ```
  4. command palette `Remote-SSH: Connect to host` copy and paste `VSCode Remote SSH command`
- 6. open platform in Linux
+ 6. select the platform `Linux`
  7. Enter password
 
 ## Error Handling
@@ -26,3 +26,13 @@ Host *.trycloudflare.com
 `has finger print`
 1. delete `known_hosts` in `C:\Users\{username}\.ssh` 
 2. restart vscode
+
+`prevent runtime connection timeout`
+1. `F12` -> `DevTools` -> `console`
+2. add
+```
+function ClickConnect(){
+	console.log("Working"); 
+	document.querySelector("colab-toolbar-button").click() 
+} setInterval(ClickConnect, 1800000)
+```
