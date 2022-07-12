@@ -32,8 +32,8 @@ Host *.trycloudflare.com
 2. add
 ```
 function ClickConnect(){
-    console.log("prevent"); 
-    document.querySelector("iron-icon#icon").click();
+    console.log("Clicked on connect button"); 
+    document.querySelector("colab-connect-button").click()
 }
-setInterval(ClickConnect, 1000 * 60);
+setInterval(ClickConnect,60000)
 ```
