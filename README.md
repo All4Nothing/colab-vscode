@@ -32,7 +32,8 @@ Host *.trycloudflare.com
 2. add
 ```
 function ClickConnect(){
-	console.log("Working"); 
-	document.querySelector("colab-toolbar-button").click() 
-} setInterval(ClickConnect, 1800000)
+    console.log("prevent"); 
+    document.querySelector("paper-button").click();
+}
+setInterval(ClickConnect, 1000 * 60);
 ```
