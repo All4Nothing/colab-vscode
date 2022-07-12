@@ -33,7 +33,7 @@ Host *.trycloudflare.com
 ```
 function ClickConnect(){
     console.log("prevent"); 
-    document.querySelector("paper-button").click();
+    document.querySelector("iron-icon#icon").click();
 }
 setInterval(ClickConnect, 1000 * 60);
 ```
