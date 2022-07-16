@@ -1,6 +1,6 @@
 ## How to use colab in vscode
 1. setting colab-vscode.ipynb
-2. Download `Remote - SSH` extension
+2. download `Remote - SSH` extension
 3. oepn command palette `Remote-SSH : Open configuration file` `/Users/{user name}/.ssh/config`
 4. add 
 ```
